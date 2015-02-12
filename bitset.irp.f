@@ -5,8 +5,8 @@ program bitset
         integer,allocatable::add(:,:)
         allocate(add(100,100))
         countbit=0
-        do i=1,100
-        if(popcnt(i).eq.3)then
+        do i=1,600
+        if(popcnt(i).eq.4)then
             countbit+=1
             add(countbit,1)=countbit
             add(countbit,2)=i
